@@ -1,0 +1,1279 @@
+i {
+  color: #4e7dd7;
+  font-style: italic;
+}
+
+#homestrong {
+  font-size: 2.7rem;
+  line-height: 1.6em;
+}
+#homebold {
+  font-size: 3.6rem;
+}
+@media screen and (max-width: 350px) {
+  #homestrong {
+    font-size: 2.4rem;
+    line-height: 1.6em;
+  }
+}
+@media screen and (max-width: 350px) {
+  #homebold {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  #homebold {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  #homestrong {
+    font-size: 2.1rem;
+    line-height: 1.6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #homestrong {
+    font-size: 3.9rem;
+  }
+  #homebold {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #homestrong {
+    font-size: 85px;
+    line-height: 125px;
+  }
+  #homebold {
+    font-size: 112px;
+  }
+}
+
+main {
+  position: relative;
+}
+
+.banner {
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 15% 35% 35% 15%;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 15% 35% 35% 15%;
+  }
+
+  @media screen and (min-width: 1100px) {
+    height: 100vh;
+    min-height: 100vh;
+    grid-template-columns: 15% 35% 35% 15%;
+  }
+
+  .CPU-BANNER {
+    width: 100%;
+    height: 100%;
+    background: url(/app/img/cpu-chip.jpeg);
+    background-attachment: scroll;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(10, 10, 10);
+      opacity: 0.9;
+    }
+  }
+
+  .SETUP-BANNER {
+    width: 100%;
+    height: 100%;
+    background: url(/app/img/240_F_314980798_lneAxgXUSJplTGIB1r4LiJfddqC0ARol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transition: all 1s ease-in-out;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(10, 10, 10);
+      opacity: 0.9;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: auto auto;
+    place-self: center center;
+    grid-column: 1/3;
+    margin: 0;
+    grid-row: 2/4;
+    margin-bottom: 100px;
+    @media screen and (max-height: 350px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      grid-column: 2/4;
+      place-self: center center;
+      margin-bottom: 100px;
+      @media screen and (max-height: 500px) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      grid-column: 2/4;
+      place-self: center center;
+      margin-bottom: 100px;
+    }
+    @media screen and (min-width: 1100px) {
+      grid-column: 2/4;
+      margin-bottom: 100px;
+      text-align: center;
+      place-self: center center;
+    }
+
+    :not(:last-child) {
+      margin-bottom: 12px;
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 25px;
+      }
+      @media screen and (min-width: 1100px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $white;
+      line-height: 1.6em;
+      text-shadow: 0px 0px 20px rgb(0, 0, 0);
+      text-align: center;
+
+      @media screen and (max-width: 350px) {
+        font-size: 1.5rem;
+        line-height: 1.5em;
+      }
+      @media screen and (max-width: 250px) {
+        font-size: 1.2rem;
+        line-height: 1.5em;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 3rem;
+      }
+
+      @media screen and (min-width: 1100px) {
+        font-size: 3.5rem;
+      }
+    }
+
+    .text {
+      width: 148px;
+      height: 25px;
+      background: white;
+      display: grid;
+      place-items: center center;
+      place-self: center center;
+      grid-column: 1/3;
+
+      @media screen and (max-width: 350px) {
+        width: 108px;
+        height: 24px;
+      }
+
+      @media screen and (min-width: 768px) {
+        height: 30px;
+        width: 175px;
+      }
+
+      @media screen and (min-width: 1100px) {
+        height: 35px;
+        width: 225px;
+        place-self: center;
+      }
+
+      a {
+        color: $black;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+
+        @media screen and (max-width: 350px) {
+          font-size: 10px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 1024px) {
+          font-size: 14px;
+        }
+        @media screen and (min-width: 1100px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.buttons {
+  display: inline;
+  width: 100px;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row: 4;
+  place-self: end center;
+  margin-bottom: 50px;
+  grid-column: 1/3;
+  @media screen and (min-width: 768px) {
+    grid-column: 1/5;
+    place-self: center center;
+    margin: 0;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-column: 1/5;
+    place-self: center center;
+    margin: 0;
+  }
+
+  input {
+    border: none;
+    width: 15px;
+    height: 15px;
+    transition: all 1s ease-in-out;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+.deals {
+  width: 100%;
+  background-color: white;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+
+  &-box {
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: 10% 80% 10%;
+    @media screen and (min-width: 800px) {
+      grid-template-columns: 10% 40% 40% 10%;
+      grid-template-rows: 7% 50% 36% 7%;
+      height: 400px;
+    }
+    @media screen and (min-width: 1100px) {
+      grid-template-rows: 10% 47% 33% 10%;
+      grid-template-columns: 10% auto 200px 200px 200px 10%;
+    }
+    @media screen and (min-width: 1200px) {
+      grid-template-rows: 10% 47% 33% 10%;
+      grid-template-columns: 10% auto 200px 200px 200px 10%;
+      height: 400px;
+    }
+    @media screen and (min-width: 1300px) {
+      grid-template-rows: 10% 47% 33% 10%;
+      grid-template-columns: 10% auto 250px 250px 250px 10%;
+      height: 400px;
+    }
+    @media screen and (min-width: 1400px) {
+      grid-template-rows: 10% 47% 33% 10%;
+      grid-template-columns: 10% auto 250px 250px 250px 10%;
+    }
+    @media screen and (min-width: 1500px) {
+      grid-template-rows: 10% 47% 33% 10%;
+      grid-template-columns: 10% auto 280px 280px 280px 10%;
+      height: 400px;
+    }
+    @media screen and (min-width: 1600px) {
+      height: 500px;
+      grid-template-rows: 10% 25% 55% 10%;
+      grid-template-columns: 10% auto 300px 300px 300px 10%;
+    }
+    @media screen and (min-width: 1800px) {
+      height: 700px;
+      grid-template-columns: 10% auto 300px 300px 300px 10%;
+    }
+
+    .text1 {
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: $black;
+        line-height: 20px;
+        grid-column: 2/3;
+        @media screen and (max-width: 350px) {
+          font-size: 12px;
+        }
+        @media screen and (max-width: 250px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 22px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      grid-column: 2/3;
+      transition: all 1s ease-in-out;
+    }
+    .text2 {
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: $black;
+        line-height: 20px;
+        grid-column: 2/3;
+        @media screen and (max-width: 350px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 22px;
+        }
+        @media screen and (max-width: 250px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      grid-column: 2/3;
+      transition: all 1s ease-in-out;
+    }
+    .text3 {
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: $black;
+        line-height: 20px;
+        grid-column: 2/3;
+        @media screen and (max-width: 350px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 22px;
+        }
+        @media screen and (max-width: 250px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      grid-column: 2/3;
+      transition: all 1s ease-in-out;
+    }
+
+    .desktoph1 {
+      display: none;
+    }
+
+    .browsecon {
+      display: none;
+      @media screen and (min-width: 1600px) {
+        display: block;
+        grid-row: 2/4;
+        grid-column: 2;
+        place-self: center center;
+        width: 400px;
+
+        .desktoph1 {
+          display: block;
+          font-size: 54px;
+          line-height: 55px;
+        }
+
+        #deal2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          background-color: $black;
+          height: 30px;
+          margin-top: 28px;
+        }
+        .browse {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          margin-top: 28px;
+        }
+      }
+      @media screen and (min-width: 1800px) {
+        place-self: center center;
+      }
+    }
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      color: $black;
+      padding-bottom: 25px;
+      grid-column: 2/3;
+      grid-row: 1;
+      place-self: center left;
+      @media screen and (max-width: 350px) {
+        font-size: 32px;
+      }
+      @media screen and (max-width: 250px) {
+        font-size: 26px;
+      }
+      @media screen and (min-width: 540px) {
+        font-size: 48px;
+        padding-bottom: 38px;
+      }
+      @media screen and (min-width: 768px) {
+        padding-bottom: 45px;
+        font-size: 50px;
+      }
+      @media screen and (min-width: 800px) {
+        grid-row: 2;
+        place-self: end start;
+        padding: 0;
+        font-size: 40px;
+      }
+      @media screen and (min-width: 1024px) {
+        grid-row: 2;
+        place-self: end start;
+        padding: 0;
+        font-size: 50px;
+      }
+      @media screen and (min-width: 1100px) {
+        font-size: 45px;
+      }
+      @media screen and (min-width: 1400px) {
+        font-size: 52px;
+        line-height: 55px;
+      }
+      @media screen and (min-width: 1500px) {
+        font-size: 60px;
+        line-height: 60px;
+      }
+      @media screen and (min-width: 1600px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      grid-column: 2/3;
+      @media screen and (max-width: 350px) {
+        font-size: 14px;
+      }
+      @media screen and (min-width: 540px) {
+        font-size: 18px;
+      }
+      @media screen and (min-width: 800px) {
+        font-size: 14px;
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 18px;
+      }
+
+      @media screen and (min-width: 1600px) {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    .button {
+      grid-column: 2/3;
+      width: 100%;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      background-color: $black;
+      @media screen and (max-width: 350px) {
+        height: 28px;
+        width: 99%;
+      }
+
+      @media screen and (min-width: 540px) {
+        margin-top: 40px;
+        height: 40px;
+      }
+      @media screen and (min-width: 768px) {
+        margin-top: 50px;
+      }
+      @media screen and (min-width: 800px) {
+        grid-column: 2;
+        margin-top: 15px;
+        width: 150px;
+        grid-row: 3;
+        place-self: start start;
+        height: 30px;
+      }
+      @media screen and (min-width: 1024px) {
+        grid-column: 2;
+        width: 200px;
+        grid-row: 3;
+
+        height: 35px;
+      }
+      @media screen and (min-width: 1600px) {
+        display: none;
+      }
+    }
+
+    .desktopdealsbox1 {
+      display: none;
+    }
+    .desktopdealsbox2 {
+      display: none;
+    }
+    .desktopdealsbox3 {
+      display: none;
+    }
+
+    @media screen and (min-width: 1100px) {
+      .desktopdealsbox1 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        place-items: center;
+        grid-row: 2/4;
+        grid-column: 3;
+        height: 250px;
+        width: 150px;
+        background-color: $white;
+        place-self: center center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+        z-index: 1;
+        position: relative;
+
+        img {
+          height: 100%;
+          grid-row: 2;
+          grid-column: 2;
+        }
+        @media screen and (min-width: 1200px) {
+          height: 270px;
+          width: 170px;
+        }
+        @media screen and (min-width: 1300px) {
+          height: 290px;
+          width: 190px;
+        }
+        @media screen and (min-width: 1400px) {
+          height: 310px;
+          width: 210px;
+        }
+        @media screen and (min-width: 1500px) {
+          height: 330px;
+          width: 230px;
+        }
+      }
+      .desktopdealsbox2 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        place-items: center;
+        grid-row: 2/4;
+        grid-column: 4;
+        height: 250px;
+        width: 150px;
+        background-color: $white;
+        place-self: center center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+        z-index: 1;
+        img {
+          height: 100%;
+          grid-row: 2;
+          grid-column: 2;
+        }
+        @media screen and (min-width: 1200px) {
+          height: 270px;
+          width: 170px;
+        }
+        @media screen and (min-width: 1300px) {
+          height: 290px;
+          width: 190px;
+        }
+        @media screen and (min-width: 1400px) {
+          height: 310px;
+          width: 210px;
+        }
+        @media screen and (min-width: 1500px) {
+          height: 330px;
+          width: 230px;
+        }
+      }
+      .desktopdealsbox3 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        place-items: center;
+        grid-row: 2/4;
+        grid-column: 5;
+        height: 250px;
+        width: 150px;
+        background-color: $white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.116);
+        place-self: center center;
+        img {
+          height: 100%;
+          grid-row: 2;
+          grid-column: 2;
+        }
+        @media screen and (min-width: 1200px) {
+          height: 270px;
+          width: 170px;
+        }
+        @media screen and (min-width: 1300px) {
+          height: 290px;
+          width: 190px;
+        }
+        @media screen and (min-width: 1400px) {
+          height: 310px;
+          width: 210px;
+        }
+        @media screen and (min-width: 1500px) {
+          height: 330px;
+          width: 230px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1600px) {
+      .desktopdealsbox1 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        grid-row: 2/4;
+        grid-column: 3;
+        height: 350px;
+        width: 250px;
+        background-color: $white;
+        place-self: center end;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+        z-index: 1;
+        position: relative;
+      }
+      .desktopdealsbox2 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        grid-row: 2/4;
+        grid-column: 4;
+        height: 350px;
+        width: 250px;
+        background-color: $white;
+        place-self: center end;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+        z-index: 1;
+      }
+      .desktopdealsbox3 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        grid-row: 2/4;
+        top: 0;
+        grid-column: 5;
+        height: 350px;
+        width: 250px;
+        background-color: $white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+        place-self: center end;
+        position: relative;
+      }
+    }
+    @media screen and (min-width: 1800px) {
+      .desktopdealsbox1 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        grid-row: 2/4;
+        grid-column: 3;
+        height: 500px;
+        width: 300px;
+        background-color: $white;
+        place-self: center end;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+        z-index: 1;
+        position: relative;
+      }
+      .desktopdealsbox2 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        grid-row: 2/4;
+        grid-column: 4;
+        height: 550px;
+        width: 350px;
+        background-color: $white;
+        place-self: center end;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+        z-index: 1;
+      }
+      .desktopdealsbox3 {
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 10% 50% 50% 10%;
+        grid-row: 2/4;
+        top: 0;
+        grid-column: 5;
+        height: 500px;
+        width: 300px;
+        background-color: $white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.116);
+        place-self: center center;
+        position: relative;
+      }
+    }
+
+    &-img {
+      padding-bottom: 10px;
+      grid-column: 2/3;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 180px;
+      background-color: $white;
+      margin: auto;
+      position: relative;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+
+      @media screen and (min-width: 540px) {
+        height: 260px;
+      }
+      @media screen and (min-width: 768px) {
+        height: 320px;
+      }
+      @media screen and (min-width: 800px) {
+        grid-column: 3;
+        grid-row: 1/5;
+      }
+      @media screen and (min-width: 1100px) {
+        display: none;
+      }
+
+      .img1 {
+        transition: all 1s ease-in-out;
+        margin-bottom: 10px;
+        @media screen and (max-width: 350px) {
+          height: 100px;
+        }
+        @media screen and (min-width: 540px) {
+          height: 180px;
+          margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) {
+          height: 200px;
+        }
+        @media screen and (min-width: 800px) {
+          height: 150px;
+        }
+      }
+      .img2 {
+        transition: all 1s ease-in-out;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 350px) {
+          height: 100px;
+        }
+        @media screen and (min-width: 540px) {
+          height: 180px;
+          margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) {
+          height: 200px;
+        }
+        @media screen and (min-width: 800px) {
+          height: 150px;
+        }
+      }
+      .img3 {
+        transition: all 1s ease-in-out;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 350px) {
+          height: 100px;
+        }
+        @media screen and (min-width: 540px) {
+          height: 180px;
+          margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) {
+          height: 200px;
+        }
+        @media screen and (min-width: 800px) {
+          height: 150px;
+        }
+      }
+
+      .a1left {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 50;
+        left: -12.5px;
+        background: $black;
+        height: 25px;
+        width: 25px;
+        clip-path: polygon(0 50%, 100% 0, 100% 100%);
+        @media screen and (min-width: 768px) {
+          height: 45px;
+          width: 45px;
+          left: 20px;
+        }
+        @media screen and (min-width: 800px) {
+          height: 30px;
+          width: 30px;
+          left: 20px;
+        }
+      }
+
+      .a1left:hover {
+        cursor: pointer;
+      }
+
+      .a2right:hover {
+        cursor: pointer;
+      }
+
+      .a2right {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 50;
+        right: -12.5px;
+        background: $black;
+        height: 25px;
+        width: 25px;
+        clip-path: polygon(0 0, 100% 50%, 0 100%);
+        @media screen and (min-width: 768px) {
+          height: 45px;
+          width: 45px;
+          right: 20px;
+        }
+        @media screen and (min-width: 800px) {
+          height: 30px;
+          width: 30px;
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+
+//computers
+.computers {
+  background-color: $grey;
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  place-items: center start;
+  margin-top: 60px;
+  grid-template-rows: 10% auto auto auto 10%;
+  @media screen and (min-width: 414px) {
+    height: 700px;
+  }
+  @media screen and (min-width: 540px) {
+    height: 700px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 850px;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 700px;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 7% 5% auto auto auto 5% 7%;
+  }
+  @media screen and (min-width: 1600px) {
+    height: 120vh;
+    background-image: url(img/cpu-chip.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .overlay {
+    display: none;
+    @media screen and (min-width: 1600px) {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(10, 10, 10);
+      opacity: 0.9;
+      opacity: 0.9;
+      position: absolute;
+    }
+  }
+
+  &-imagecontainer {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110%;
+      height: 80%;
+      background: white;
+      grid-column: 2/3;
+      grid-row: 1/8;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+      place-self: center left;
+
+      .image {
+        background-image: url(img/computers.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 80%;
+        height: 80%;
+      }
+    }
+    @media screen and (min-width: 1600px) {
+      display: none;
+    }
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    color: $black;
+    grid-column: 2/3;
+    grid-row: 2;
+
+    @media screen and (max-width: 350px) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 290px) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: 540px) {
+      font-size: 44px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 50px;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-column: 4;
+      font-size: 50px;
+      grid-row: 3;
+    }
+  }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: $black;
+    grid-column: 2/3;
+    grid-row: 3;
+    @media screen and (max-width: 350px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 290px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 414px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 28px;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-column: 4;
+      font-size: 24px;
+      grid-row: 4;
+    }
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $black;
+    grid-column: 2/3;
+    line-height: 22px;
+    grid-row: 4;
+    @media screen and (max-width: 350px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 290px) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: 414px) {
+      font-size: 17.5px;
+      line-height: 26px;
+    }
+    @media screen and (min-width: 540px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: 38px;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-column: 4;
+      font-size: 16px;
+      line-height: 28px;
+      grid-row: 5;
+    }
+  }
+
+  //desktop
+  .desktop-container {
+    display: none;
+    @media screen and (min-width: 1600px) {
+      background: $white;
+      z-index: 0;
+      height: 85%;
+      width: 95%;
+      place-self: center center;
+      display: grid;
+      grid-template-columns: 5% 45% 45% 5%;
+      grid-template-rows: 5% auto auto 5%;
+      grid-column: 2/5;
+      grid-row: 3/6;
+
+      .text {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        grid-column: 3;
+        grid-row: 2/4;
+        color: black;
+        width: 400px;
+        place-self: center center;
+        height: 550px;
+      }
+      .image {
+        grid-column: 2;
+        grid-row: 2/4;
+        background-image: url(img/computers.jpg);
+        background-size: cover;
+        background-position: center;
+        place-self: center center;
+        width: 80%;
+        height: 80%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.301);
+      }
+    }
+  }
+}
+
+//reviews
+
+.reviews {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  place-items: center;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 90px;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 10% 37.5% 5% 37.5% 10%;
+  }
+  @media screen and (min-width: 1600px) {
+    height: 100vh;
+  }
+
+  .formimage {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    img {
+      display: none;
+      @media screen and (min-width: 1024px) {
+        height: 300px;
+        display: block;
+      }
+      @media screen and (min-width: 1600px) {
+        width: 80vw;
+        height: auto;
+        position: relative;
+        right: 60%;
+        transform: translateX(0%);
+      }
+    }
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+  }
+
+  form {
+    display: block;
+    width: 100%;
+    background-color: $white;
+    height: 400px;
+    grid-column: 2;
+    display: grid;
+    place-items: center center;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% auto auto auto auto 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.116);
+    @media screen and (min-width: 540px) {
+      height: 400px;
+    }
+    @media screen and (min-width: 768px) {
+      height: 650px;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-column: 4;
+      height: 500px;
+    }
+    @media screen and (min-width: 1600px) {
+      height: 70%;
+    }
+
+    .name {
+      border: none;
+      height: 28px;
+      width: calc(100% - 15px);
+      font-size: 12px;
+      grid-column: 2/3;
+      grid-row: 3;
+      padding-left: 15px;
+      @media screen and (min-width: 768px) {
+        height: 38px;
+        font-size: 16px;
+      }
+      @media screen and (min-width: 1600px) {
+        height: 40px;
+      }
+    }
+
+    .name::placeholder {
+      color: rgba(27, 27, 27, 0.418);
+      font-weight: 500;
+    }
+    .name:focus {
+      outline: none;
+    }
+
+    .content {
+      font-family: "Montserrat", sans-serif;
+
+      font-weight: 400;
+      color: black;
+      grid-row: 4;
+      border: none;
+      width: calc(100% - 15px);
+      height: 150px;
+      font-size: 12px;
+      grid-column: 2/3;
+      padding-left: 10px;
+      padding-top: 10px;
+      @media screen and (min-width: 768px) {
+        height: 200px;
+        font-size: 16px;
+      }
+      @media screen and (min-width: 1024px) {
+        height: 160px;
+      }
+      @media screen and (min-width: 1600px) {
+        height: 360px;
+      }
+    }
+    .content::placeholder {
+      color: rgba(27, 27, 27, 0.418);
+      font-weight: 500;
+    }
+    .content:focus {
+      outline: none;
+    }
+    .submit {
+      grid-column: 2/3;
+      place-self: center start;
+      border: none;
+      background-color: #4e7dd7;
+      width: 50%;
+      height: 25px;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+
+      font-weight: 700;
+      grid-row: 5;
+      @media screen and (min-width: 768px) {
+        height: 35px;
+        font-size: 18px;
+      }
+    }
+    .submit:focus {
+      outline: none;
+    }
+    h1 {
+      font-family: "Montserrat", sans-serif;
+
+      font-weight: 800;
+      font-size: 26px;
+      color: $black;
+      grid-column: 1/4;
+      grid-row: 2;
+      @media screen and (max-width: 350px) {
+        font-size: 20px;
+      }
+      @media screen and (min-width: 540px) {
+        font-size: 32px;
+        place-self: center center;
+        grid-column: 2/3;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 50px;
+        font-weight: 600;
+      }
+      @media screen and (min-width: 1024px) {
+        font-size: 30px;
+        grid-column: 2/3;
+        place-self: center center;
+      }
+      @media screen and (min-width: 1600px) {
+        font-size: 48px;
+      }
+    }
+  }
+}

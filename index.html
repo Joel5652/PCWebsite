@@ -1,0 +1,245 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <p> <a href="index.html"> GFU</a></p>
+           
+                    <a href="support.html" id="home" class="desktoplink">SUPPORT</a>
+                    <a href="" class="desktoplink" id="products">PRE-BUILT</a>
+                    <a href="support.html" class="desktoplink" id="support">CUSTOM COMPUTERS</a>
+                    <a href="contact.html" class="desktoplink" id="contact">CONTACT</a>
+           
+            
+                
+                <button class="menu" >
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                
+            
+            <nav class="header-nav display">
+
+                <div class="header-nav-container">
+                    <a href="index.html" class="home">HOME</a>
+                    <a href="" class="products">PRODUCTS</a>
+                    <a href="support.html" class="support">SUPPORT</a>
+                    <a href="contact.html" class="contact">CONTACT</a>
+                </div>
+
+                <div class="header-nav-overlay opacity0">
+                </div>
+                    
+            </nav>
+        </header>
+        
+        <main>
+        <!-- Banner -->
+            <section class="banner">
+                <div class="SETUP-BANNER z-index-2 opacity0"> <div class="overlay"></div> </div>
+                <div class="CPU-BANNER z-index-1" ><div class="overlay"></div></div>
+                <div class="container">
+                    <h1> <strong id="homestrong">CREATE</strong> <br>
+                       <b id="homebold"> CUSTOM</b> <br>
+                        COMPUTERS
+                    </h1>
+                    
+                    <div class="text">
+                        <a href="#computers">LEARN MORE</a>
+                    </div>
+                </div>
+                    
+                    <div class="buttons">
+                        <input type="button" class="leftButton background1" onclick="removeBanner(RightButton, LeftButton);">
+                        <input type="button" class="rightButton background3" onclick="addBanner(RightButton, LeftButton);">
+                    </div>  
+                
+            </section>
+        <!-- Banner -->
+
+        <!-- products -->
+            <section class="deals">
+                <div class="deals-box">
+                    
+                    <!-- mobile -->
+                    <div class="deals-box-img" >
+                      <a href=""><img class="img1"  src="app/img/product1.png" alt="HP Gaming PC"></a>   
+                      <a href=""> <img class="img2 display opacity0"  src="app/img/13173233_4.png" alt="HP Gaming PC"></a> 
+                      <a href=""><img class="img3 display opacity0"  src="app/img/custom-gaming-pc.png" alt="HP Gaming PC"></a>  
+                        <input type="button"  class="a1left" onclick="remove(leftLink, rightLink);"><div class="arrow"></div>
+                        <input type="button"  class="a2right" onclick="add(leftLink, rightLink);"><div class="arrow2"></div>
+                        <div class="text1">
+                            <p>HP Gaming PC | Save up to £100</p>
+                        </div>
+                        <div class="text2 display opacity0">
+                            <p>HP Gaming PC | Save up to £100</p>
+                        </div>
+                        <div class="text3 display opacity0">
+                            <p>HP Gaming PC | Save up to £100</p>
+                        </div>
+                    </div>
+                    <!-- mobile -->
+
+                    <!-- desktop -->
+
+                        <div class="desktopdealsbox1">
+                            <img src="" alt="">
+                        </div>
+                        <div class="desktopdealsbox2">
+                            <img src="" alt="">
+                        </div>
+                        <div class="desktopdealsbox3">
+                            <img src="" alt="">
+                        </div>
+                        <h1>BROWSE <br> PRODUCTS</h1>
+                        <div class="button" id="computers">
+                            <a href=""><h3>SEE MORE</h3></a>
+                        </div>
+
+                    <!-- desktop -->
+
+
+                    
+
+                    <div class="browsecon">
+                        <h1 class="desktoph1">BROWSE <br>PRODUCTS</h1>
+                        <p class="browse">
+                            All pre-built computers are sold on our amazon, ebay or facebook.
+                            Our computers come ready-made with their own up to date 
+                            versions of windows 10 and full support from the moment you click purchase.
+
+                        </p>
+                        <div class="button" id="deal2">
+                            <a href=""><h3>SEE MORE</h3></a>
+                        </div>
+                 </div>
+
+                    
+                    
+                </div>
+
+
+
+            </section>
+        <!-- products -->
+
+        
+        <!-- Custom computers -->   
+
+            <div class="computers" >
+                <div class="overlay"></div>
+                <h1>CUSTOM <br> COMPUTERS</h1>
+                <h3>Why buy pre-built?</h3>
+                <p>Send us your preferences and have your
+                    own personal computer delivered to you 
+                    in days! We sell much cheaper than the 
+                    average retailer who sells close to 2 to 3 
+                    times the original wholesale price.
+                <br> <br>
+                    Save up to 30% by choosing to buy from
+                    us! Each computer sold is accompanied 
+                    with full support. If any assistance is
+                    needed please visit our <i><a href="support.html">support page</a></i>  or 
+                    contact us directly from our <i><a href="contact.html">contact page.</a> </i> 
+                </p>
+                
+                <div class="computers-imagecontainer">
+                    <div class="image"></div>
+                </div>
+
+                <!--DESKTOP-->
+                    <div class="desktop-container">
+                        <div class="text">
+                            <h1>CUSTOM <br> COMPUTERS</h1>
+                            <h3>Why buy pre-built?</h3>
+                            <p>Send us your preferences and have your
+                                own personal computer delivered to you 
+                                in days! We sell much cheaper than the 
+                                average retailer who sells close to 2 to 3 
+                                times the original wholesale price.
+                            <br> <br>
+                                Save up to 30% by choosing to buy from
+                                us! Each computer sold is accompanied 
+                                with full support. If any assistance is
+                                needed please visit our <i><a href="/PC-Website/support.html">support page</a></i>  or 
+                                contact us directly from our <i><a href="/PC-Website/contact.html">contact page.</a> </i> 
+                            </p>
+                        </div>
+                        <!--     
+                        <div class="image">
+                          
+                        </div>
+                        -->
+                    </div>
+
+                <!--DESKTOP-->
+
+            </div>
+
+        <!-- Custom computers -->
+
+
+        <!-- Reviews-->
+            <div class="reviews">
+
+                <div class="formimage">
+                        <img src="" alt="">
+                </div>  
+                    <form>
+                        <h1>LEAVE A REVIEW</h1>
+                        <input type="text" class="name" placeholder="Name">
+                        <textarea  class="content" 
+                        placeholder="How was your experience with us?"></textarea>
+                        <input type="submit" class="submit">
+                    </form>
+                                  
+
+            </div>
+        <!-- Reviews-->
+
+        </main>
+        <footer class="footer">
+
+            <style>
+                a:-webkit-any-link{
+                    color:inherit;
+                }
+
+                
+              </style>
+
+            <h3 class="Item1"> <a href=""> Products</a></h3>
+            <h3 class="Item2"> Stay connected </h3>
+            <h4 class="Item3"> <a href=""> Facebook</a></h4>
+            <h4 class="Item4"> <a href="">Amazon</a> </h4>
+            <h4 class="Item5"> <a href="">Ebay</a> </h4>
+            <h4 class="Item6">Website by Joel Martin</h4>
+            <h3 class="Item7"> <a href=""> Contact Us</a></h3>
+            <h3 class="Item8"> <a href="support.html"> Support</a></h3>
+            <span></span>
+            <h4 class="Item9">United Kingdom</h4>
+            <h3 class="Item10"> <a href="disclaimer.html"> Disclaimer</a></h3> 
+            <h3 class="Item11"><a href="privacy.html"> Privacy policy</a></h3>
+            <h3 class="Item12"> <a href="terms.html"> Terms of use</a></h3>
+        </footer>
+        
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+            <script src="js/script.js"></script>
+    
+
+</html>
